@@ -1,38 +1,216 @@
 body {
-    background-color: #595959;
-    color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
-h1{
-    text-align: center;
-    font-size: 40px;
-    font-family: Arial, sans-serif;
-  }
+.skip {
+  position: absolute!important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  word-wrap: normal!important;
+}
+
+header {
+  font-family: Verdana, sans-serif;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 70px;
+}
+h1 {
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  margin: auto;
+  padding:10px;
+  font-weight: bold;
+}
+h2 {
+  font-family: Verdana, sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 40px;
+  margin: auto;
+  padding:10px;
+}
+
+
+main {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin: 20px auto;
+}
+
+.content {
+  margin-left: 0;
+  transition: left 0.5s;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+/* Style for photo galleries */
+h3 {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+  font-family: 'Verdana', sans-serif;
+  text-align: center;
+}
+
+/* Style An item container */
+
+.item-container{
+  background-color: #20547C;
+  color: white;
+  padding: 20px;
+}
+
+.additional-photos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin: 20px auto;
+  background: #aebbcd;
+  padding: 10px;
+  color: black;
+}
+
+.additional-photos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.thumbnail {
+  margin: 5px;
+}
+
+ul {
+  list-style-type: square;
+  padding: 20px;
+  background: #aebbcd;
+  color: black;
+  font-family: Verdana, sans-serif;
+}
+ol {
+  list-style-type: square;
+  padding: 20px;
+  background: #aebbcd;
+  color: black;
+  font-family: Verdana, sans-serif;
+}
+/* nav ul {
   
-  h2{
-    font-size: 30px;
-    font-family: Arial, sans-serif;
-    color:black;
-  }
+  background-color: #375f62;
+  text-align: center;
+  font-size: 20px;
   
-  h3{
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    color:black;
+} */
+
+/* Add a hover effect for navigation links */
+/* nav ul li a:hover {
+  background-color: #2d5f62;
+  transition: background-color 0.3s;
+  
+} */
+
+.recipe-info{
+  background: #aebbcd;
+  color: black;
+}
+
+#navBar {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-color: #333;
+  left: -150px;
+  transition: left 0.5s;
+}
+
+#navBar.active {
+  left: 0;
+}
+
+ul.nav-links {
+  list-style: none !important;
+  font-size: 20px !important;
+  background-color: transparent !important;
+}
+
+ul.nav-links a {
+  color: #fff !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#navToggle {
+  position: absolute;
+  top: 30px;
+  left: 180px;
+}
+
+#navToggle span{
+  width: 45px;
+  height: 4px;
+  background: black;
+  display: block;
+  margin-top: 4px;
+}
+
+#main.active{
+  margin-left: 150px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img[src$=".gif"] {
+  display: none;
   }
 
-  img {
-    border: 5px solid grey;
-    padding: 10px; 
-    margin: 20px; 
-    border-top-right-radius: 30px; 
+  main {
+    transition: none;
+  }
+
+  #navBar {
+    transition: none;
+  }
 }
 
-li {
-    display: inline-block;
-    margin-left: 50px;
+ul.nav-links a:hover {
+  text-decoration: underline;
 }
 
-nav {
-    text-align: center;
+#navToggle:hover{
+  background-color: #666;
+}
+
+.item-container a{
+  text-decoration: underline;
+  color: white;
 }
