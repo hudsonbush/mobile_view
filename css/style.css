@@ -172,6 +172,10 @@ ul.nav-links a {
   margin-left: 150px;
 }
 
+button {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   img[src$=".gif"] {
   display: none;
@@ -301,4 +305,52 @@ ul.nav-links a:hover {
  li {
   font-size: 1.5em;
  }
+
+ .additional-photos{
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+ }
+
+ .carousel{
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: auto;
+
+ }
+
+ .slide{
+    width: 100%;
+    display: none;
+ }
+
+ button {
+  display: block;
+  cursor: pointer;
+ }
+
+.prev{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  color: rbga(255, 255, 255, .5);
+  border-radius: .25em;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.2);
+  font-size: 50px;
+  color: white;
+}
+
+.next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  color: rbga(255, 255, 255, .5);
+  border-radius: .25em;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.2);
+  font-size: 50px;
+  color: white;
+}
 }
