@@ -176,6 +176,12 @@ button {
   display: none;
 }
 
+.title-img:hover,
+.title-img:focus{
+  transform: scale(1.025);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 @media (prefers-reduced-motion: reduce) {
   img[src$=".gif"] {
   display: none;
@@ -188,13 +194,19 @@ button {
   #navBar {
     transition: none;
   }
+
+  .title-img{
+    transform: none;
+  }
 }
 
-ul.nav-links a:hover {
+ul.nav-links a:hover,
+ul.nav-links a:focus  {
   text-decoration: underline;
 }
 
-#navToggle:hover{
+#navToggle:hover,
+#navToggle:focus{
   background-color: #666;
 }
 
@@ -202,6 +214,11 @@ ul.nav-links a:hover {
   text-decoration: underline;
   color: white;
 }
+
+.slide {
+  display: grid;
+}
+
 
 @media screen and (min-width: 700px) {
   main {
@@ -246,7 +263,8 @@ ul.nav-links a:hover {
     text-decoration: underline !important;
   }
 
-  .pets-link:hover {
+  .pets-link:hover,
+  .pets-link:focus {
     background-color: #666;
     text-decoration: none;
   }
@@ -263,7 +281,8 @@ ul.nav-links a:hover {
     text-decoration: underline;
   }
 
-  .recipes-link:hover {
+  .recipes-link:hover,
+  .recipes-link:focus {
     background-color: #666;
     text-decoration: none;
   }
@@ -274,7 +293,8 @@ ul.nav-links a:hover {
     text-decoration: underline;
     text-decoration-color: white;
   }
-  .travel-link:hover {
+  .travel-link:hover,
+  .travel-link:focus {
     background-color: #666;
     text-decoration: none;
   }
