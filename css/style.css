@@ -44,7 +44,7 @@ h2 {
 
 main {
   padding: 10px;
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 30px;
   justify-items: center;
@@ -219,6 +219,11 @@ ul.nav-links a:focus  {
   display: grid;
 }
 
+@media screen and (min-width: 450px){
+  .main {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+}
 
 @media screen and (min-width: 700px) {
   main {
@@ -327,14 +332,14 @@ ul.nav-links a:focus  {
  }
 
  .additional-photos{
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
  }
 
  .carousel{
   position: relative;
   max-width: 100%;
   overflow: hidden;
-  margin: auto;
+  margin: 0 auto;
 
  }
 
