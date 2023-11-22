@@ -445,4 +445,8 @@ ul.nav-links a:focus  {
     grid-column: 3;
     border-radius: 50px !important;
   }
+
+  .additional-photos{
+    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+   }
 }
