@@ -417,6 +417,28 @@ ul.nav-links a:focus  {
   width: 30%; 
   margin-bottom: 20px;
 }
+
+#ap-recipes2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#ap-recipes2 img{
+  width: 30%; 
+  margin-bottom: 20px;
+}
+
+#ap-recipes3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#ap-recipes3 img{
+  width: 30%; 
+  margin-bottom: 20px;
+}
 }
 
 @media screen and (min-width: 1000px) {
@@ -437,6 +459,32 @@ ul.nav-links a:focus  {
   }
 
   #ap-recipes img{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+  }
+
+  #ap-recipes2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  #ap-recipes2 img{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+  }
+
+  #ap-recipes3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  #ap-recipes3 img{
     width: 100%;
     height: 100%;
     padding: 30px;
