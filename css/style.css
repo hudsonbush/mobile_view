@@ -16,6 +16,14 @@ body {
   word-wrap: normal!important;
 }
 
+:focus{
+  border: 2px solid blue;
+}
+
+.time-header{
+  display: none;
+}
+
 header {
   font-family: Verdana, sans-serif;
   background-color: #333;
@@ -90,6 +98,7 @@ h3 {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   justify-items: center;
+  justify-content: center;
   margin: 20px auto;
   background: #aebbcd;
   padding: 10px;
@@ -226,6 +235,11 @@ ul.nav-links a:focus  {
 }
 
 @media screen and (min-width: 700px) {
+  .skip:focus{
+    border: 2px solid #007bff;
+
+  }
+  
   main {
       grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
       left: 0;
@@ -378,4 +392,40 @@ ul.nav-links a:focus  {
   font-size: 50px;
   color: white;
 }
+
+#ap-recipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#ap-recipes img{
+  width: 30%; 
+  margin-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 1000px) {
+  .time-header{
+    display: block;
+  }
+
+  .skip:focus{
+    border: 2px solid #007bff;
+
+  }
+
+  #ap-recipes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  #ap-recipes img{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+  }
+
+  
 }
